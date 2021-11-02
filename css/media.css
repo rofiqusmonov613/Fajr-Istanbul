@@ -97,11 +97,14 @@ ul {
     display: none;
   }
   .header__logo {
-    margin-left: 120px;
+    margin-left: 380px;
   }
   .header__icon {
-    margin-left: -250px;
     display: block;
+    margin-left: 200px;
+  }
+  .header {
+    width: 1115px;
   }
 }
 /*# sourceMappingURL=media.css.map */
