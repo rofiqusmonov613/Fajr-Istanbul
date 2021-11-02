@@ -53,11 +53,14 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     height: 10px;
-    margin-top: 2px;
     border: 2px solid #fff;
     border-radius: 1px;
+}
+
+.flex-4 {
+    margin-top: 20px;
 }
 
 .header__btn:hover {
@@ -68,4 +71,30 @@ ul {
 
 .header__link:last-child {
     margin-left: 0px;
+}
+
+.header__icon {
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .flex-2 {
+        display: none;
+    }
+    .flex-3 {
+        display: none;
+    }
+    .flex-4 {
+        display: none;
+    }
+    .header__logo {
+        margin-left: 120px;
+    }
+    .header__icon {
+        margin-left: -250px;
+        display: block;
+    }
 }
