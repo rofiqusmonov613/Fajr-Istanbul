@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 .container {
     width: 1400px;
     margin: 0 auto;
     padding: 0;
+    
 }
 
 .header {
@@ -14,6 +17,9 @@
     padding-top: 15px;
     font-family: "Orbitron";
     font-weight: 400;
+}
+body{
+    overflow-x: hidden;
 }
 
 .header__logo {
@@ -80,28 +86,12 @@ ul {
     display: none;
     z-index: 2;
 }
-
-@media screen and (max-width:768px) {
-    .flex-2 {
-        display: none;
-    }
-    .flex-3 {
-        display: none;
-    }
-    .flex-4 {
-        display: none;
-    }
-    .header__logo {
-        margin: 0;
-    }
-    .header__icon {
-        position: absolute;
-        display: block;
-        margin-left: 950px;
-    }
-    .header {
-        width: 1115px;
-    }
+.main__title{
+    font-family: 'Indie Flower';
+    color: rgb(243, 243, 243);
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -15px;
 }
 
 .modal {
@@ -114,6 +104,8 @@ ul {
     left: 0;
     right: 0;
     max-height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 5;
     font-family: "Orbitron";
     font-weight: 400;
@@ -121,17 +113,29 @@ ul {
 
 .ochilish {
     display: flex;
+    transition: 1s ease all;
 }
 
 .modal-wrapper {
     background-color: #000;
-    width: 1130px;
+    width: 830px;
     height: 300px;
     display: flex;
     justify-content: center;
     z-index: 5;
     box-shadow: 0px 0px 20px 6px #fff;
-    margin-left: -300px;
+    margin-left: -570px;
+}
+.modal__x{
+    background-color: transparent;
+    position: absolute;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    left: 0;
+    cursor: pointer;
 }
 
 .modal__item {
@@ -166,4 +170,137 @@ ul {
     background-color: transparent;
     color: #fff;
     transition: 1s ease all;
+}
+.main{
+    background-color: rgb(17, 16, 16);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.main__img{
+    margin-left: 120px;
+}
+.main__text{
+    position: absolute;
+    font-family: 'Nanum Pen Script';
+    color: rgb(243, 243, 243);
+    margin-left: 577px;
+    margin-top: 100px;
+    font-size: 22px;
+}
+.footer{
+    width: 1400px;
+    background-color: #000000;
+    height: 250px;
+    display: flex;
+}
+.footer__logo{
+    width: 200px;
+    height: 60px;
+    padding-left: 115px;
+    padding-top: 30px;
+}
+.footer__text{
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 120px;
+    font-family: 'Nanum Pen Script';
+    font-size: 21px;
+}
+.footer__link{
+    color: #1086C2;
+    font-size: 33px;
+    margin-left: 200px;
+}
+.footer__icon{
+    margin-top: 12px;
+    &:hover{
+        transform: scale(1.2);
+        transition: .8s ease all;
+    }
+}
+.footer__title{
+    margin-left: 170px;
+    font-size: 22px;
+    color: rgb(243, 243, 243);
+}
+.footer__heading{
+    font-family: 'Indie Flower';
+    color: #ccc;
+    font-size: 35px;
+}
+.footer__link2{
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Nanum Pen Script';
+    margin-left: 8px;
+}
+.footer__list{
+    margin-left: 160px;
+    margin-top: 38px;
+}
+.footer__flex{
+    display: flex;
+}
+@media screen and (max-width: 1000px) {
+    .flex-2 {
+        display: none;
+    }
+    .flex-3 {
+        display: none;
+    }
+    .flex-4 {
+        display: none;
+    }
+    .header__icon {
+        position: absolute;
+        display: block;
+        margin-left: 555px;
+    }
+    .header {
+        width: 830px;
+    }
+    .main{
+        width: 750px;
+        padding-left: 80px;
+    }
+    .main__title{
+        position: absolute;
+        padding-left: 60px;
+        text-align: center;
+    }
+    .main__text{
+        left: -400px;
+        text-align: center;
+    }
+    .footer{
+        width: 830px;
+        display: block;
+        height: 550px;
+    }
+    .footer__flex{
+        display: flex;
+        margin-left: -80px;
+    }
+    .footer__flex-1{
+        margin-left: 160px;
+    }
+}
+@media screen and(max-width:450px) {
+    .main__text{
+        display: none;
+    }
+    .main{
+        width: 700px;
+        padding-bottom: 100px;
+    }
+    .header{
+        width: 780px;
+    }
+    .footer{
+        width: 780px;
+    }
+    .main__title{
+        padding-left: 200px;
+    }
 }
