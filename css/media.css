@@ -348,5 +348,9 @@ ul {
   .main__title {
     padding-left: 200px;
   }
+  .modal-wrapper {
+    width: 780px;
+    margin-left: -620px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
